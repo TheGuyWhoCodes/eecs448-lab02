@@ -34,6 +34,7 @@ bool LinkedList<T>::search(T value) const {
         if(temp.getValue() == value) {
             return true;
         }
+        temp = temp->getNext();
     }
 	return false;
 }
